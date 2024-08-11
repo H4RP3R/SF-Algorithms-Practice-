@@ -2,7 +2,7 @@
 // Функция должна иметь сигнатуру:
 // func checkSliceIsSorted(a []int) bool
 
-package main
+package sortcheck
 
 func checkSliceIsSorted(a []int) bool {
 	if len(a) == 0 {
@@ -16,8 +16,4 @@ func checkSliceIsSorted(a []int) bool {
 	}
 
 	return true
-}
-
-func main() {
-
 }
