@@ -30,3 +30,12 @@ func Test_qSort(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_qSort(b *testing.B) {
+	arr := randIntArray(100_000, 0, 100)
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		_ = qSort(arr)
+	}
+}
